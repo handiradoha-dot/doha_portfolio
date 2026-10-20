@@ -145,6 +145,7 @@ nav a:hover, nav a.active { color: white; border-bottom: 2px solid var(--accent)
 .module-card.orange { --card: #ed9569; }
 .module-card.yellow { --card: #e7bc43; }
 .module-card.cyan { --card: #40cde0; }
+.module-card.green { --card: #75ce9b; }
 .module-card { border-color: var(--card); }
 .module-icon, .project-icon {
     width: 43px; height: 43px; border-radius: 9px;
