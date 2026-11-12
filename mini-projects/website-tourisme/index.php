@@ -1,5 +1,5 @@
 <?php
-require_once("config/connexion.php");
+require_once __DIR__ . "/config/connexion.php";
 
 // Get search value
 $search = $_GET['search'] ?? '';

@@ -1,8 +1,42 @@
 {
+  "functions": {
+    "api/tourism/**/*.php": {
+      "runtime": "vercel-php@0.9.0",
+      "includeFiles": "mini-projects/website-tourisme/**/*"
+    }
+  },
   "rewrites": [
     {
       "source": "/",
       "destination": "/index.html"
+    },
+    {
+      "source": "/mini-projects/website-tourisme",
+      "destination": "/api/tourism/index.php"
+    },
+    {
+      "source": "/mini-projects/website-tourisme/index.php",
+      "destination": "/api/tourism/index.php"
+    },
+    {
+      "source": "/mini-projects/website-tourisme/destination.php",
+      "destination": "/api/tourism/destination.php"
+    },
+    {
+      "source": "/mini-projects/website-tourisme/services.php",
+      "destination": "/api/tourism/services.php"
+    },
+    {
+      "source": "/mini-projects/website-tourisme/reservation.php",
+      "destination": "/api/tourism/reservation.php"
+    },
+    {
+      "source": "/mini-projects/website-tourisme/review.php",
+      "destination": "/api/tourism/review.php"
+    },
+    {
+      "source": "/mini-projects/website-tourisme/confirm.php",
+      "destination": "/api/tourism/confirm.php"
     }
   ]
 }

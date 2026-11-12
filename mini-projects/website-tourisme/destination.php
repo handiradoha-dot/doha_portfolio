@@ -1,5 +1,5 @@
 <?php
-require_once("config/connexion.php");
+require_once __DIR__ . "/config/connexion.php";
 $id = $_GET['id'] ?? 0;
 
 $stmt = $pdo->prepare("SELECT * FROM destination WHERE id = ?");

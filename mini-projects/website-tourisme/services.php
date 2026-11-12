@@ -79,7 +79,7 @@ form select {
 </style>
 
 <?php
-require_once("config/connexion.php");
+require_once __DIR__ . "/config/connexion.php";
 $city_id = $_GET['city_id'] ?? 0;
 $type = $_GET['type'] ?? 'both';
 $food_type = $_GET['food_type'] ?? '';
